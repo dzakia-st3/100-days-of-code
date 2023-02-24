@@ -1,0 +1,30 @@
+.container {
+    background-color: pink;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sub-container {
+    width: 25%;
+    background-color: white;
+    position: absolute;
+    margin: 4% 0;
+    padding: 3rem;
+}
+
+.sub-person {
+    display: flex;
+    align-items: center;
+}
+
+.profil {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 5%;
+}
+
+.profil-text {
+    display: flex;
+    align-items: center;
+}
