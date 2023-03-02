@@ -2,14 +2,14 @@
     background-color: pink;
     width: 100vw;
     height: 100vh;
+    display: flex;
 }
 
 .sub-container {
     width: 25%;
     background-color: white;
-    position: absolute;
-    margin: 4% 0;
-    padding: 3rem;
+    margin: auto auto;
+    padding: 0.5rem 3rem;
 }
 
 .sub-person {
@@ -28,3 +28,17 @@
     display: flex;
     align-items: center;
 }
+
+.birthday-button {
+    width: 100%;
+    padding: 4% 0;
+    background-color: palevioletred;
+    color: white;
+    font-size: medium;
+    border: none;
+    border-radius: 3px;
+    margin-top: 5%;
+    cursor: pointer;
+    margin-bottom: 5%;
+}
+
