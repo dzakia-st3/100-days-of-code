@@ -8,7 +8,7 @@ const Tours = ({tours, removeTour}) => {
             <h2>our tours</h2>
             <div className='underline'></div>
         </div>
-        <div>
+        <div className='tour-container'>
             {tours.map((tour) => {
                 return <Tour key={tour.id} {...tour} removeTour={removeTour} />
             })}
