@@ -1,16 +1,18 @@
 import React from 'react'
 import Review from './review'
-import './style.css'
+import './review.css'
 
 const ReviewPage = () => {
   return (
-    <section className='container'>
-        <div className='title'>
-            <h2>our reviews</h2>
-            <div className='underline'></div>
+    <main className='reviews'>
+      <section className='container-review'>
+        <div className='title-review'>
+          <h2>our reviews</h2>
+          <div className='underline'></div>
         </div>
-        <Review/>
-    </section>
+        <Review />
+      </section>
+    </main>
   )
 }
 
