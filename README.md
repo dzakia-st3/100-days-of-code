@@ -2,4 +2,4 @@
 
 #### Project References
 
-[PReact Project || John Smilga](https://react-projects.netlify.app/)
+[React Project || John Smilga](https://react-projects.netlify.app/)
