@@ -5,6 +5,8 @@ import Tours from "./tours";
 import Review from "./review";
 import AccordionPage from "./accordion";
 import MenuView from "./menu";
+import TabsView from "./tabs";
+import Slider from "./slider";
 
 function MainNavigation() {
     return (
@@ -16,6 +18,8 @@ function MainNavigation() {
                 <Route path="/review" element={<Review/>}/>
                 <Route path="/accordion" element={<AccordionPage/>}/>
                 <Route path="/menu" element={<MenuView/>} />
+                <Route path="/tabs" element={<TabsView/>}/>
+                <Route path="/slider" element={<Slider/>}/>
             </Routes>
         </BrowserRouter>
     )
