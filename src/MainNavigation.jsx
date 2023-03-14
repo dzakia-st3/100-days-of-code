@@ -7,6 +7,7 @@ import AccordionPage from "./accordion";
 import MenuView from "./menu";
 import TabsView from "./tabs";
 import Slider from "./slider";
+import LoremIpsum from "./loremIpsum";
 
 function MainNavigation() {
     return (
@@ -20,6 +21,7 @@ function MainNavigation() {
                 <Route path="/menu" element={<MenuView/>} />
                 <Route path="/tabs" element={<TabsView/>}/>
                 <Route path="/slider" element={<Slider/>}/>
+                <Route path="/lorem-ipsum" element={<LoremIpsum/>}/>
             </Routes>
         </BrowserRouter>
     )
