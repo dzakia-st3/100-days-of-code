@@ -9,6 +9,7 @@ import TabsView from "./tabs";
 import Slider from "./slider";
 import LoremIpsum from "./loremIpsum";
 import ColorGenerator from "./colorGenerator";
+import GroceryBud from "./grocery-bud"
 
 function MainNavigation() {
     return (
@@ -24,6 +25,7 @@ function MainNavigation() {
                 <Route path="/slider" element={<Slider/>}/>
                 <Route path="/lorem-ipsum" element={<LoremIpsum/>}/>
                 <Route path="/color-generator" element={<ColorGenerator/>} />
+                <Route path="/grocery-bud" element={<GroceryBud/>} />
             </Routes>
         </BrowserRouter>
     )
