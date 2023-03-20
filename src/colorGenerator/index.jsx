@@ -50,6 +50,7 @@ const ColorGenerator = () => {
                 <h3>Color Generator</h3>
                 <form onSubmit={handleSubmit}>
                     <input
+                        style={{width: '50%'}}
                         type='text'
                         value={color}
                         onChange={(e) => setColor(e.target.value)}
