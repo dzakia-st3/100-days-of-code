@@ -163,14 +163,15 @@ Variables
   Grocery List
   ===============
   */
-  .section-center {
+  .section-center-grocery {
     background: var(--clr-white);
     border-radius: var(--radius);
     box-shadow: var(--light-shadow);
     transition: var(--transition);
     padding: 2rem;
+    margin: 10% 15%;
   }
-  .section-center:hover {
+  .section-center-grocery:hover {
     box-shadow: var(--dark-shadow);
   }
   .alert {
@@ -197,9 +198,13 @@ Variables
     margin-bottom: 1.5rem;
     text-align: center;
   }
-  .form-control {
+  .form-control-grocery {
     display: flex;
     justify-content: center;
+  }
+
+  .form-control-grocery input {
+    width: 91%;
   }
   .grocery {
     padding: 0.25rem;
@@ -216,7 +221,7 @@ Variables
     font-family: var(--ff-secondary);
     color: var(--clr-grey-5);
   }
-  .submit-btn {
+  .submit-btn-grocery {
     background: var(--clr-primary-8);
     border-color: transparent;
     flex: 0 0 5rem;
@@ -232,7 +237,7 @@ Variables
     transition: var(--transition);
     font-size: 0.85rem;
   }
-  .submit-btn:hover {
+  .submit-btn-grocery:hover {
     background: var(--clr-primary-5);
     color: var(--clr-white);
   }
@@ -245,9 +250,10 @@ Variables
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     margin-bottom: 0.5rem;
     transition: var(--transition);
-    padding: 0.25rem 1rem;
+    padding: 0 1rem;
     border-radius: var(--radius);
     text-transform: capitalize;
   }
@@ -303,4 +309,8 @@ Variables
   }
   .clear-btn:hover {
     color: var(--clr-red-dark);
+  }
+  
+  .btn-container {
+    margin: 1% 0;
   }

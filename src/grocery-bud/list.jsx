@@ -1,12 +1,14 @@
 import React from 'react';
 import { FaEdit, FaTrash } from 'react-icons/fa';
+import './style.css'
+
 const List = ({ items, removeItem, editItem }) => {
   return (
     <div className='grocery-list'>
       {items.map((item) => {
         const { id, title } = item;
         return (
-          <article className='grocery-item' key={id}>
+          <div className='grocery-item' key={id}>
             <p className='title'>{title}</p>
             <div className='btn-container'>
               <button
@@ -24,7 +26,7 @@ const List = ({ items, removeItem, editItem }) => {
                 <FaTrash />
               </button>
             </div>
-          </article>
+          </div>
         );
       })}
     </div>

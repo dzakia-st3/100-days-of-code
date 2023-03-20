@@ -64,12 +64,12 @@ function GroceryBud() {
     localStorage.setItem('list', JSON.stringify(list));
   }, [list]);
   return (
-    <section className='section-center'>
+    <section className='section-center-grocery'>
       <form className='grocery-form' onSubmit={handleSubmit}>
         {alert.show && <Alert {...alert} removeAlert={showAlert} list={list} />}
 
         <h3>grocery bud</h3>
-        <div className='form-control'>
+        <div className='form-control-grocery'>
           <input
             type='text'
             className='grocery'
@@ -77,16 +77,19 @@ function GroceryBud() {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <button type='submit' className='submit-btn'>
+          <button type='submit' className='submit-btn-grocery'>
             {isEditing ? 'edit' : 'submit'}
           </button>
         </div>
       </form>
-      <div className='grocery-container'>
-          <button className='clear-btn' onClick={clearList}>
-            clear items
-          </button>
-        </div>
+      {list.length > 0 && (
+        <div className='grocery-container'>
+          <List items={list} removeItem={removeItem} editItem={editItem}/>
+        <button className='clear-btn' onClick={clearList}>
+          clear items
+        </button>
+      </div>
+      )}
     </section>
   );
 }
