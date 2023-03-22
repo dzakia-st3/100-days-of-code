@@ -10,6 +10,7 @@ import Slider from "./slider";
 import LoremIpsum from "./loremIpsum";
 import ColorGenerator from "./colorGenerator";
 import GroceryBud from "./grocery-bud"
+import SideBar from "./sidebar";
 import {Todo} from "./todo"
 
 function MainNavigation() {
@@ -28,6 +29,7 @@ function MainNavigation() {
                 <Route path="/color-generator" element={<ColorGenerator/>} />
                 <Route path="/grocery-bud" element={<GroceryBud/>} />
                 <Route path="/todo" element={<Todo/>} />
+                <Route path="/sidebar" element={<SideBar/>} />
             </Routes>
         </BrowserRouter>
     )
