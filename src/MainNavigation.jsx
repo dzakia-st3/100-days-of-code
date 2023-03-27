@@ -12,6 +12,7 @@ import ColorGenerator from "./colorGenerator";
 import GroceryBud from "./grocery-bud"
 import SideBar from "./sidebar";
 import {Todo} from "./todo"
+import CartApp from "./cart";
 
 function MainNavigation() {
     return (
@@ -30,6 +31,7 @@ function MainNavigation() {
                 <Route path="/grocery-bud" element={<GroceryBud/>} />
                 <Route path="/todo" element={<Todo/>} />
                 <Route path="/sidebar" element={<SideBar/>} />
+                <Route path="/cart" element={<CartApp/>} />
             </Routes>
         </BrowserRouter>
     )
