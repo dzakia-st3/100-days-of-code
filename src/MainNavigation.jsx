@@ -13,6 +13,7 @@ import GroceryBud from "./grocery-bud"
 import SideBar from "./sidebar";
 import {Todo} from "./todo"
 import CartApp from "./cart";
+import Beverage from "./beverage";
 
 function MainNavigation() {
     return (
@@ -32,6 +33,7 @@ function MainNavigation() {
                 <Route path="/todo" element={<Todo/>} />
                 <Route path="/sidebar" element={<SideBar/>} />
                 <Route path="/cart" element={<CartApp/>} />
+                <Route path="/beverage" element={<Beverage/>} />
             </Routes>
         </BrowserRouter>
     )

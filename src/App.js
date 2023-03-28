@@ -2,12 +2,15 @@ import './App.css';
 import MainNavigation from './MainNavigation';
 import { AppProvider } from './sidebar/context';
 import { CartProvider } from './cart/context';
+import { AppBeverageProvider } from './beverage/context';
 
 function App() {
   return (
     <AppProvider>
       <CartProvider>
-      <MainNavigation />
+        <AppBeverageProvider>
+          <MainNavigation />
+        </AppBeverageProvider>
       </CartProvider>
     </AppProvider>
   );
